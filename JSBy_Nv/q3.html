@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //write to find armstrong number in range of 1 to 500
+        function findArmstrong() {
+    for (let i = 1; i <= 500; i++) {
+        let num = i;
+        let sum = 0;
+        let temp = num;
+
+        while (temp > 0) {
+            let digit = temp % 10; // Extract the last digit
+            sum += digit ** 3;    // Add the cube of the digit
+            temp = Math.floor(temp / 10); // Remove the last digit
+        }
+
+        if (sum === num) {
+            console.log(num); // Print the Armstrong number
+        }
+    }
+}
+
+findArmstrong();
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write to find perfect number in range of 1 to 10000
+        function findPerfectNumbers() {
+    for (let i = 1; i <= 10000; i++) {
+        let sum = 0;
+
+        // Find all divisors of the current number
+        for (let j = 1; j <= i / 2; j++) {
+            if (i % j === 0) {
+                sum += j; // Add the divisor to the sum
+            }
+        }
+
+        // Check if the number is a perfect number
+        if (sum === i) {
+            console.log(i); // Print the perfect number
+        }
+    }
+}
+
+findPerfectNumbers();
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

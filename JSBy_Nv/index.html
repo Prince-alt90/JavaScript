@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">Hello World</h1>
+    <p id="p1">This is a paragraph</p>
+    <button onclick="Test1234()">Click</button>
+    <script>
+         function Test1234(){
+           document.getElementById("head1").innerHtml="Test123";
+           document.getElementById("p1").innerHtml="This is a paragraph with newer one";  
+        }
+
+   
+
+        // alert("Hello World")
+        for(let a=1;a<10;a++)console.log(a);
+        
+        let str1="String 1"
+        let str2="String 2"
+
+        //method for string concatenation
+        str3=str1 + " " +str2
+
+        //method to find length
+        let l1=str1.length
+        console.log(l1);
+
+        //method to access individual character of string
+        for(let i=0;i<l1;i++)console.log(str1[i]);
+
+        // method to get substring
+        console.log(str1.slice(1,5));
+
+        console.log(str1.includes('Str'));    // use for checking is this number available or not in your varaible
+
+        console.log("    Prince".trimStart());   // use for removing initial space
+        console.log("Prince      ".trimEnd());     // use for removing ending space
+
+        let newStr=str1.replace("String","New")    // it will replace 'String' to 'New' from str1 variable
+        console.log(newStr);
+
+
+        str7=str3.split(" ")   //it will split a string into an array of substring (basically it will split the value based on your desire input)
+        console.log(str7);
+
+        str8=str7.join(",")    //method to convert array to a string
+        console.log(str8);
+           
+
+        //
+       
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

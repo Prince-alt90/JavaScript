@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test123(){
+            console.log("RKU Students")
+        }
+
+        test123();
+        function operation123(a,b){
+            return a+b
+        }
+        console.log(operation123(4,5));
+        console.log(operation123("Abc","Def"));
+        console.log(operation123("Hello",5));
+        console.log(operation123(true,false));
+        console.log(operation123());
+        console.log(operation123(25));
+
+
+        function test345(){
+            console.log("This is a function");
+            
+        }
+        setTimeout(test345,3000)
+
+        let var3=function(x,y){     //passing function to variable
+            return x+y;
+        }
+        console.log(var3(4,5));
+
+        let var4=(x,y)=>{          // we can write like this also without write 'function'
+            return x+y;
+        }
+        console.log(var4(4,5));
+
+        let var5=(x,y)=>x-y ;        // we can write function diretly like this 
+        console.log(var5(4,5));
+
+        let var6=(x)=>x*x*x;
+        console.log(var6(4));
+
+        let var7=()=>{
+            console.log("dfgfdf");
+            
+        }
+        var7();
+
+        let list1=['DBMS','DS','OS','DAA']
+        list2=list1.find((i) => i.length==2)
+        console.log(list2);for(let i=0;i<list2.length;i++){
+            if (list1[i].length===2){
+                console.log(list1[i]);
+            }
+        }
+
+        let list3=[1,2,3,4,5,6,7,8]
+        list4=list3.map((x) => x*x)
+        console.log(list4);
+
+        
+
+
+                
+        
+
+        
+        
+    </script>
+</body>
+</html>
